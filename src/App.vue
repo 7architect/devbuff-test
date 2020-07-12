@@ -198,7 +198,7 @@ export default {
   },
   methods: {
     edit(index) {
-      this.form = this.positions[index];
+      this.form = { ...this.positions[index] };
       this.editMode = true;
       this.editIndex = index;
       this.dialog = true;
